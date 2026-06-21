@@ -1,0 +1,37 @@
+{
+  "name": "website-automation-agent",
+  "version": "1.0.0",
+  "description": "An intelligent, AI-driven website automation agent that navigates to a web page, detects form elements, and fills them in autonomously. A mini browser-use built on Playwright with a pluggable brain (Groq LLM or heuristic engine).",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "bin": {
+    "automation-agent": "dist/index.js"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "agent": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "serve": "node dist/index.js",
+    "postinstall": "playwright install chromium"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "agent",
+    "browser-use",
+    "ai",
+    "groq",
+    "web-automation"
+  ],
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "groq-sdk": "^0.7.0",
+    "playwright": "^1.48.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
