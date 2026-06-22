@@ -25,7 +25,7 @@ This element detection is the interesting part, and it's handled in **two differ
 
 Both brains drive the **same set of primitive tools** — they only differ in *how* they choose coordinates.
 
-> 💡 The heuristic brain means **the demo always work**, even with no API key and no internet model access.
+> 💡 The heuristic brain means **the demo always works**, even with no API key and no internet model access.
 
 ---
 
